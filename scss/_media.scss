@@ -1,0 +1,214 @@
+// Tablets and Smaller
+@media(max-width:800px) {
+    #header-home {
+        height: 35rem;
+
+        .header-content {
+            padding-top: 4rem;
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            span {
+                display: block;
+            }
+
+        }
+
+    }
+}
+
+// Smart Phones and smaller
+@media(max-width:550px) {
+
+    #main-nav {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            padding: 1rem;
+        }
+    }
+
+    #header {
+
+        &-home {
+            height: 42%;
+            // border-bottom: 3px solid $main-color;
+
+
+            .header-content {
+
+                padding-top: 1.5rem;
+                display: block;
+
+                h1 {
+                    font-size: 2.5rem;
+                    padding-bottom: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                .lead {
+                    font-size: 1.2rem;
+                }
+
+            }
+
+        }
+
+        &-inner {
+            height: 12rem;
+        }
+
+        //Ensuring all backgrounds are in the same position
+        //Ive decided to keep the landing page details instead of skipping it
+        //undo to have it removed. make display for .header-content none
+        /* &-home::before,
+        &-inner::before {
+            background-position: 98% 30%;
+        }*/
+    }
+
+    //stack Grid columns
+
+    #home-a .highlight,
+    #home-b .stats,
+    #home-c .process,
+    #about-d .testimonials,
+    #contact-b .contact-info,
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    #home {
+        &-a {
+            .highlight div {
+                border-bottom: 1px solid $light-color;
+                padding-bottom: 1rem;
+
+                &:last-child {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        &-b {
+            .stats div {
+                padding: 2rem 1rem;
+            }
+        }
+    }
+
+    //About
+    #about {
+        &-a {
+            .about-info {
+                grid-template-areas:
+                    'bio-img'
+                    'bio'
+                    'b-i-1'
+                    'b-i-2'
+                    'b-i-3'
+                ;
+                justify-items: center;
+
+                .bio-img {
+                    width: 80%;
+                    height: 300px;
+
+                }
+            }
+
+        }
+
+        &-c {
+            .about-logos {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+        }
+    }
+
+    //Contact
+
+    #contact {
+        &-a {
+            .text-fields {
+                grid-template-areas:
+                    'name'
+                    'email'
+                    'phone'
+                    'subject'
+                    'message';
+            }
+        }
+
+        &-b {
+            .contact-info div {
+                border-bottom: 0.5px solid $medium-color;
+                padding-bottom: 0.5rem;
+                padding-top: 1rem;
+
+                &:last-child {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+            }
+
+        }
+
+        &-c {
+            #tag {
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+//Landscape 
+@media(max-height:580px) {
+    #header-home {
+        .header-content {
+            padding-top: 2rem;
+
+            h1 {
+                font-size: 3rem;
+
+
+                span {
+                    display: inline;
+                }
+
+                //padding-bottom: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .lead {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media(max-height:380px) {
+    #header-home {
+        height: 40%;
+
+        .header-content {
+
+            h1 {
+                font-size: 2rem;
+
+                span {
+                    display: inline;
+                }
+            }
+
+            .lead {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

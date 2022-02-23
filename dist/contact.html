@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- Font AWESOME SCRIPT INCLUSION (ICONS)-->
+   <script src="https://kit.fontawesome.com/7b36db9d89.js" crossorigin="anonymous"></script>
+    <!--Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Staatliches&display=swap" rel="stylesheet">
+    
+    <!-- CSS FILE LINKED -->
+    <link rel="stylesheet" href="css/main.css">
+   
+    <title>Kedejra Cameron| About Me</title>
+
+</head>
+<body>
+    <!-- Header -->
+    <header id="header-inner">
+        <div class="container"> <!--Container is to help with centering elements-->
+            <nav id="main-nav">
+                 <img src="img/KC Logos/Portfolio Logo Transparent3.png" alt="My Portfolio" id="logo">
+                <ul>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a class="current" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+    <!-- Section A: Contact Form -->
+    <section id="contact-a" class="text-center pad-3">
+        <div class="container">
+            <h2 class="section-title">Hit Me Up</h2>
+            <div class="underline"></div>
+            <p class="lead">Here's how you can reach me</p>
+
+            <form method="post" data-netlify="true" data-netlify-recaptcha="true">
+                <div class="text-fields">
+                   <input type="text" class="text-input name-input" name="name" placeholder="What's your name?"> 
+                   <input type="text" class="text-input subject-input" name="subject" placeholder="What's the subject?"> 
+                   <input type="email" class="text-input email-input" name="email" placeholder="What's your email address?"> 
+                   <input type="text" class="text-input phone-input" name="phone" placeholder="What's your phone number?"> 
+                   <textarea class="message-input"  name="message" placeholder="Type your message..."></textarea>
+                   <div class="marg-2">
+                      <div data-netlify-recaptcha="true"></div>
+                   </div>
+                </div>
+                
+                <button type="submit" class="btn-dark">Submit <i style="padding-left:0.7rem" class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+    <!-- Contact info -->
+    <section id="contact-b" class=" text-center pad-3 bg-dark">
+        <div class="container">
+            <div class="contact-info">
+            <div>
+                <i class="fas fa-envelope fa-2x"></i>
+                <h3>Email</h3>
+                <p>kc.web.dev@something.com</p>
+            </div>
+            <div>
+                <i class="fas fa-phone-alt fa-2x"></i>
+                <h3>Phone Number</h3>
+                <p>+1 876 333-3333</p>
+            </div>
+            <div>
+                <i class="fas fa-map-pin fa-2x"></i>
+                <h3>Location</h3>
+                <p>Kingston, Jamaica</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section C: Tagline -->
+    <section id="contact-c" class=" text-center bg-gradient pad-4">
+        <div class="container">
+        <h1 id="tag"> Let's Start Your Next Project!</h1>
+    </div>
+    </section>
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Copyright &copy; 2022. All rights reserved</p>
+            <div class="social">
+                <a href="www.linkedin.com/in/kedejra-cameron-bsc" target="_blank"><i class="fab fa-linkedin "></i></a>
+                <i class="fab fa-facebook "></i>
+                <i class="fab fa-instagram "></i>
+                <i class="fab fa-twitter "></i>
+                
+            </div>
+    
+            <p>Showcase image: Photo by <a href="https://unsplash.com/@norestinthewild?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Chris Malinao Burgett</a> on Unsplash</p>
+        </div>
+    </footer>
+ </body>
+</html>
